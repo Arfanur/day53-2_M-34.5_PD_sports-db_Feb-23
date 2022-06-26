@@ -1,0 +1,41 @@
+/* For more info
+https://www.youtube.com/watch?v=trsuokl2Fp4
+ */
+.border-spinner {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loading--full-height {
+    align-items: center;
+    height: 100%;
+}
+
+.loading::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    /* border: 10px solid transparent; */
+    border: 10px solid #dddddd;
+    border-top-color: #009579;
+    border-bottom-color: #009;
+    /* background: #009579;
+    opacity: 0.5; */
+    border-radius: 50%;
+    /* animation: loading 0.3s ease-in-out infinite alternate; */
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(1turn);
+        /* opacity: 1;
+        transform: scale(1.75); */
+    }
+}

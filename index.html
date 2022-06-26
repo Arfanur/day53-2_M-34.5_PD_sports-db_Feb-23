@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports db</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Vanilla CSS -->
+  <link rel="stylesheet" href="css/sports-db.css">
+</head>
+
+<body>
+  <h1 class="text-center text-info">Search Players</h1>
+
+  <!-- Loading Spinner -->
+  <!-- <div class="border-spinner mx-auto"> -->
+  <div class="">
+    <!-- Loading Search Result -->
+    <div class="loading loading--full-height my-3">
+    </div>
+  </div>
+
+  <!-- Players Search Area -->
+  <div class="input-group mb-3 w-50 mx-auto">
+    <input id="input-field" type="text" class="form-control" placeholder="Search Player Name"
+      aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button id="button-search" onclick="loadPlayers()" class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+
+  <!-- Empty Input -->
+  <h5 id="empty-input" class="text-center text-danger">
+  </h5>
+
+  <!-- Error Message -->
+  <h5 id="error-message" class="text-center text-danger">
+    Something went wrong, please try again later
+  </h5>
+
+  <!-- Single player -->
+  <div id="single-player" class="col-6 mx-auto">
+  </div>
+
+  <!-- Players Search Result -->
+  <div id="players-container"
+    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-auto g-4">
+  </div>
+
+
+  <!-- javascript -->
+  <script src="js/1_sports-db.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
